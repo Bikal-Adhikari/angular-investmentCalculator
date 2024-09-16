@@ -1,5 +1,6 @@
 {
   "name": "essentials-practice",
+  "author": "Bikal",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

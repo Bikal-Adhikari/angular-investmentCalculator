@@ -1,27 +1,55 @@
-# EssentialsPractice
+# Investment Calculator App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0-next.2.
+The **Investment Calculator App** is a simple, user-friendly tool to help users calculate their investment growth over time. Built using **Angular** and styled with **Tailwind CSS**, the app takes into account initial investment, annual contributions, expected return rate, and investment duration to provide annual projections of investment growth.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Annual Projections**: Calculates the investment value, interest earned, and total contributions at the end of each year.
+- **Customizable Inputs**: Users can input the initial investment, annual contributions, expected return rate, and duration of the investment.
+- **Detailed Breakdown**: Displays a breakdown of the investment value, annual interest earned, and total interest at the end of each year.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: A TypeScript-based open-source web application framework for building dynamic single-page applications.
+- **Tailwind CSS**: A highly customizable, low-level CSS framework that provides utility classes for styling.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone the repository**:
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/Bikal-Adhikari/angular-investmentCalculator.git
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Navigate to project directory**:
 
-## Running end-to-end tests
+```bash
+cd investment-calculator-app
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Install dependencies**:
 
-## Further help
+```bash
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. **Start the application**:
+
+```bash
+npm start
+```
+
+## Usage
+
+- Input the following parameters:
+
+1. Initial Investment: The starting amount of money.
+2. Annual Investment: The amount added to the investment at the start of each year.
+3. Expected Return (%): The annual return rate of the investment (as a percentage).
+4. Duration (years): The number of years the investment will grow.
+
+- View Investment Growth: The app will calculate the total investment value, interest earned, and breakdown of data for each year.
+
+## Contributing
+
+If you'd like to contribute to the project, feel free to create a pull request or submit an issue.
