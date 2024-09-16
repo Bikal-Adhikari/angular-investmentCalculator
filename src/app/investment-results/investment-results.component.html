@@ -1,0 +1,34 @@
+@if(!results()){
+<p class="center text-black">Please enter some values and press "Calculate".</p>
+} @else{
+<table class="max-w-2xl mx-auto mt-8 p-4 table-fixed border-collapse">
+  <thead>
+    <tr>
+      <th class="text-xs font-bold text-black px-2 py-1">Year</th>
+      <th class="text-xs font-bold text-black px-2 py-1">Investment value</th>
+      <th class="text-xs font-bold text-black px-2 py-1">Interest (Year)</th>
+      <th class="text-xs font-bold text-black px-2 py-1">Total Interest</th>
+      <th class="text-xs font-bold text-black px-2 py-1">Invested Capital</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(result of results(); track result.year){
+    <tr>
+      <td class="text-sm text-right text-black">{{ result.year }}</td>
+      <td class="text-sm text-right text-black">
+        {{ result.valueEndOfYear | currency : "AUD" }}
+      </td>
+      <td class="text-sm text-right text-black">
+        {{ result.interest | currency : "AUD" }}
+      </td>
+      <td class="text-sm text-right text-black">
+        {{ result.totalInterest | currency : "AUD" }}
+      </td>
+      <td class="text-sm text-right text-black">
+        {{ result.totalAmountInvested | currency : "AUD" }}
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>
+}

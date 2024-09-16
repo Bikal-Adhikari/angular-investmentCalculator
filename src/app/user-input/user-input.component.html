@@ -1,0 +1,72 @@
+<form
+  class="bg-gradient-to-b from-red-500 to-orange-500 p-4 max-w-md mx-auto rounded-lg shadow-md"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="flex justify-between space-x-6">
+    <div class="w-1/2">
+      <label
+        for="initial-investment"
+        class="block mb-1 text-xs font-bold uppercase text-black"
+        >Initial Investment</label
+      >
+      <input
+        id="initial-investment"
+        name="initial-investment"
+        type="number"
+        class="w-full p-2 border border-red-400 rounded-md bg-transparent text-sm text-black"
+        [(ngModel)]="enteredInitialInvestment"
+      />
+    </div>
+    <div class="w-1/2">
+      <label
+        for="annual-investment"
+        class="block mb-1 text-xs font-bold uppercase text-black"
+        >Annual Investment</label
+      >
+      <input
+        id="annual-investment"
+        name="annual-investment"
+        type="number"
+        class="w-full p-2 border border-red-400 rounded-md bg-transparent text-black text-sm"
+        [(ngModel)]="enteredAnnualInvestment"
+      />
+    </div>
+  </div>
+  <div class="flex justify-between space-x-6 mt-4">
+    <div class="w-1/2">
+      <label
+        for="expected-return"
+        class="block mb-1 text-xs font-bold uppercase text-black"
+        >Expected Return</label
+      >
+      <input
+        id="expected-return"
+        name="expected-return"
+        type="number"
+        class="w-full p-2 border border-red-400 rounded-md bg-transparent text-black text-sm"
+        [(ngModel)]="enteredExpectedReturn"
+      />
+    </div>
+    <div class="w-1/2">
+      <label
+        for="duration"
+        class="block mb-1 text-xs font-bold uppercase text-black"
+        >Duration</label
+      >
+      <input
+        id="duration"
+        name="duration"
+        type="number"
+        class="w-full p-2 border border-red-400 rounded-md bg-transparent text-black text-sm"
+        [(ngModel)]="enteredDuration"
+      />
+    </div>
+  </div>
+  <p class="mt-4">
+    <button
+      class="w-full p-2 border border-red-400 rounded-md bg-orange-300 text-black font-bold uppercase hover:bg-orange-400 cursor-pointer"
+    >
+      Calculate
+    </button>
+  </p>
+</form>
